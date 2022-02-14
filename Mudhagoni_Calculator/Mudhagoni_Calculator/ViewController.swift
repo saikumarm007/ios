@@ -2,20 +2,18 @@
 //  ViewController.swift
 //  Mudhagoni_Calculator
 //
-//  Created by Mudhagoni,Sai Kumar on 2/10/22.
+//  Created by Mudhagoni,Sai Kumar on 2/13/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var DisplayLabel: UIStackView!
-    
+    @IBOutlet weak var DisplayLabel: UILabel!
     @IBOutlet weak var AC: UIButton!
     @IBOutlet weak var C: UIButton!
-    @IBOutlet weak var Back: UIButton!
-    @IBOutlet weak var Divison: UIButton!
-    
+    @IBOutlet weak var doubleArth: UIButton!
+    @IBOutlet weak var Division: UIButton!
     @IBOutlet weak var S7: UIButton!
     @IBOutlet weak var E8: UIButton!
     @IBOutlet weak var N9: UIButton!
@@ -32,24 +30,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var Minus: UIButton!
     @IBOutlet weak var Multiple: UIButton!
     @IBOutlet weak var Remain: UIButton!
+    
     var workings:String = ""
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            clearAll()
-            // Do any additional setup after loading the view.
-        }
-        func clearAll(){
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        clearAll()
+        // Do any additional setup after loading the view.
+    }
+    func clearAll(){
             workings = ""
             DisplayLabel.text = ""
         }
+
     @IBAction func Equal(_ sender: Any) {
         if(validInput())
                         {
-                            let checkedWorkingsForPercent = workings.replacingOccurrences(of: "%", with: "*0.01")
-                            let expression = NSExpression(format: checkedWorkingsForPercent)
-                            let result = expression.expressionValue(with: nil, context: nil) as! Double
-                            let resultString = formatResult(result: result)
-                            DisplayLabel.text = resultString
+                    let checkedWorkingsForPercent = workings
+        //                .replacingOccurrences(of: "%", with: "")
+                                let expression = NSExpression(format: checkedWorkingsForPercent)
+                                let result = expression.expressionValue(with: nil, context: nil) as! Double
+        //            if(expression == "/"){
+        //
+        //
+        //            }
+                                let resultString = formatResult(result: result)
+                                DisplayLabel.text = resultString
                         }
                         else
                         {
@@ -60,96 +65,118 @@ class ViewController: UIViewController {
                             alert.addAction(UIAlertAction(title: "Okay", style: .default))
                             self.present(alert, animated: true, completion: nil)
                         }
-            }
-            func validInput() ->Bool
+    }
+    
+    func validInput() ->Bool
+            {
+                var count = 0
+                var funcCharIndexes = [Int]()
+                
+                for char in workings
                 {
-                    var count = 0
-                    var funcCharIndexes = [Int]()
-                   
-                    for char in workings
+                    if(specialCharacter(char: char))
                     {
-                        if(specialCharacter(char: char))
-                        {
-                            funcCharIndexes.append(count)
-                        }
-                        count += 1
+                        funcCharIndexes.append(count)
                     }
-                   
-                    var previous: Int = -1
-                   
-                    for index in funcCharIndexes
+                    count += 1
+                }
+                
+                var previous: Int = -1
+                
+                for index in funcCharIndexes
+                {
+                    if(index == 0)
                     {
-                        if(index == 0)
+                        return false
+                    }
+                    
+                    if(index == workings.count - 1)
+                    {
+                        return false
+                    }
+                    
+                    if (previous != -1)
+                    {
+                        if(index - previous == 1)
                         {
                             return false
                         }
-                       
-                        if(index == workings.count - 1)
-                        {
-                            return false
-                        }
-                       
-                        if (previous != -1)
-                        {
-                            if(index - previous == 1)
-                            {
-                                return false
-                            }
-                        }
-                        previous = index
                     }
-                   
+                    previous = index
+                }
+                
+                return true
+            }
+        func specialCharacter (char: Character) -> Bool
+            {
+                if(char == "*")
+                {
                     return true
                 }
-            func specialCharacter (char: Character) -> Bool
+                if(char == "/")
                 {
-                    if(char == "*")
-                    {
-                        return true
-                    }
-                    if(char == "/")
-                    {
-                        return true
-                    }
-                    if(char == "+")
-                    {
-                        return true
-                    }
-                    return false
+                    return true
                 }
-               
-                func formatResult(result: Double) -> String
+                if(char == "+")
                 {
-                    if(result.truncatingRemainder(dividingBy: 1) == 0)
-                    {
-                        return String(format: "%.0f", result)
-                    }
-                    else
-                    {
-                        return String(format: "%.2f", result)
-                    }
-    }
+                    return true
+                }
+                if(char == "%")
+                {
+                    return true
+                }
+                return false
+            }
+            
+            func formatResult(result: Double) -> String
+            {
+                
+                if(result.truncatingRemainder(dividingBy: 1) == 0)
+                {
+                    return String(format: "%.f", result)
+                }
+                else
+                {
+    //                return "Error"
+                    return String(format: "%.1f", result)
+                }
+            }
+    
     @IBAction func AC(_ sender: Any) {
         clearAll()
     }
     @IBAction func Clear(_ sender: Any) {
-        clearAll()
+        if(!workings.isEmpty){
+                    workings.removeLast()
+                    DisplayLabel.text = workings
+                }
     }
-    @IBAction func backb(_ sender: Any) {
-        if(!workings.isEmpty)
-                        {
-                            workings.removeLast()
-                            DisplayLabel.text = workings
-                        }
-            }
-            func addToWorkings(value: String){
-                workings = workings + value
-                DisplayLabel.text = workings
-    }
+    
+    func addToWorkings(value: String){
+            workings = workings + value
+            DisplayLabel.text = workings
+        }
+    @IBAction func PM(_ sender: Any) {
+        let pm = DisplayLabel.text!
+                var RunningTotal = (pm as NSString).doubleValue
+                if(RunningTotal > 0){
+                    RunningTotal = RunningTotal * -1;
+                    let std = String(format: "%.0f", RunningTotal)
+                    DisplayLabel.text = std;
+                    workings = std;
+                }
+                else{
+                    RunningTotal = RunningTotal * -1;
+                    let std = String(format: "%.0f", RunningTotal)
+                    DisplayLabel.text = std;
+                    workings = std;
+                }
+                }
+    
     @IBAction func Division(_ sender: Any) {
         addToWorkings(value: "/")
     }
-    @IBAction func Mutiply(_ sender: Any) {
+    @IBAction func Multiply(_ sender: Any) {
         addToWorkings(value: "*")
     }
     @IBAction func Minus(_ sender: Any) {
@@ -177,22 +204,22 @@ class ViewController: UIViewController {
         addToWorkings(value: "3")
     }
     @IBAction func F4(_ sender: Any) {
-            addToWorkings(value: "4")
+        addToWorkings(value: "4")
     }
     @IBAction func F5(_ sender: Any) {
-            addToWorkings(value: "5")
+        addToWorkings(value: "5")
     }
     @IBAction func S6(_ sender: Any) {
-            addToWorkings(value: "6")
+        addToWorkings(value: "6")
     }
     @IBAction func S7(_ sender: Any) {
-            addToWorkings(value: "7")
+        addToWorkings(value: "7")
     }
     @IBAction func E8(_ sender: Any) {
-            addToWorkings(value: "8")
+        addToWorkings(value: "8")
     }
     @IBAction func N9(_ sender: Any) {
-            addToWorkings(value: "9")
+        addToWorkings(value: "9")
     }
 }
 
