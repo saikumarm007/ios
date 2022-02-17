@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98952C5927BA098300D5778E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98952C5827BA098300D5778E /* AppDelegate.swift */; };
-		98952C5B27BA098300D5778E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98952C5A27BA098300D5778E /* SceneDelegate.swift */; };
-		98952C5D27BA098300D5778E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98952C5C27BA098300D5778E /* ViewController.swift */; };
-		98952C6027BA098300D5778E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98952C5E27BA098300D5778E /* Main.storyboard */; };
-		98952C6227BA098500D5778E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98952C6127BA098500D5778E /* Assets.xcassets */; };
-		98952C6527BA098500D5778E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98952C6327BA098500D5778E /* LaunchScreen.storyboard */; };
-		98952C7027BA098500D5778E /* Mudhagoni_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98952C6F27BA098500D5778E /* Mudhagoni_CalculatorTests.swift */; };
-		98952C7A27BA098500D5778E /* Mudhagoni_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98952C7927BA098500D5778E /* Mudhagoni_CalculatorUITests.swift */; };
-		98952C7C27BA098500D5778E /* Mudhagoni_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98952C7B27BA098500D5778E /* Mudhagoni_CalculatorUITestsLaunchTests.swift */; };
+		9881E77827BDFC1700909CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881E77727BDFC1700909CB4 /* AppDelegate.swift */; };
+		9881E77A27BDFC1700909CB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881E77927BDFC1700909CB4 /* SceneDelegate.swift */; };
+		9881E77C27BDFC1700909CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881E77B27BDFC1700909CB4 /* ViewController.swift */; };
+		9881E77F27BDFC1700909CB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9881E77D27BDFC1700909CB4 /* Main.storyboard */; };
+		9881E78127BDFC1900909CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9881E78027BDFC1900909CB4 /* Assets.xcassets */; };
+		9881E78427BDFC1900909CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9881E78227BDFC1900909CB4 /* LaunchScreen.storyboard */; };
+		9881E78F27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881E78E27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.swift */; };
+		9881E79927BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881E79827BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.swift */; };
+		9881E79B27BDFC1900909CB4 /* Mudhagoni_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881E79A27BDFC1900909CB4 /* Mudhagoni_CalculatorUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		98952C6C27BA098500D5778E /* PBXContainerItemProxy */ = {
+		9881E78B27BDFC1900909CB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 98952C4D27BA098200D5778E /* Project object */;
+			containerPortal = 9881E76C27BDFC1700909CB4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 98952C5427BA098300D5778E;
+			remoteGlobalIDString = 9881E77327BDFC1700909CB4;
 			remoteInfo = Mudhagoni_Calculator;
 		};
-		98952C7627BA098500D5778E /* PBXContainerItemProxy */ = {
+		9881E79527BDFC1900909CB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 98952C4D27BA098200D5778E /* Project object */;
+			containerPortal = 9881E76C27BDFC1700909CB4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 98952C5427BA098300D5778E;
+			remoteGlobalIDString = 9881E77327BDFC1700909CB4;
 			remoteInfo = Mudhagoni_Calculator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		98952C5527BA098300D5778E /* Mudhagoni_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mudhagoni_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		98952C5827BA098300D5778E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98952C5A27BA098300D5778E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98952C5C27BA098300D5778E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98952C5F27BA098300D5778E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98952C6127BA098500D5778E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		98952C6427BA098500D5778E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		98952C6627BA098500D5778E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98952C6B27BA098500D5778E /* Mudhagoni_CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mudhagoni_CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		98952C6F27BA098500D5778E /* Mudhagoni_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_CalculatorTests.swift; sourceTree = "<group>"; };
-		98952C7527BA098500D5778E /* Mudhagoni_CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mudhagoni_CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		98952C7927BA098500D5778E /* Mudhagoni_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_CalculatorUITests.swift; sourceTree = "<group>"; };
-		98952C7B27BA098500D5778E /* Mudhagoni_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9881E77427BDFC1700909CB4 /* Mudhagoni_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mudhagoni_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9881E77727BDFC1700909CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9881E77927BDFC1700909CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9881E77B27BDFC1700909CB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9881E77E27BDFC1700909CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9881E78027BDFC1900909CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9881E78327BDFC1900909CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9881E78527BDFC1900909CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9881E78A27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mudhagoni_CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9881E78E27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_CalculatorTests.swift; sourceTree = "<group>"; };
+		9881E79427BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mudhagoni_CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9881E79827BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_CalculatorUITests.swift; sourceTree = "<group>"; };
+		9881E79A27BDFC1900909CB4 /* Mudhagoni_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		98952C5227BA098300D5778E /* Frameworks */ = {
+		9881E77127BDFC1700909CB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98952C6827BA098500D5778E /* Frameworks */ = {
+		9881E78727BDFC1900909CB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98952C7227BA098500D5778E /* Frameworks */ = {
+		9881E79127BDFC1900909CB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,53 +76,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		98952C4C27BA098200D5778E = {
+		9881E76B27BDFC1700909CB4 = {
 			isa = PBXGroup;
 			children = (
-				98952C5727BA098300D5778E /* Mudhagoni_Calculator */,
-				98952C6E27BA098500D5778E /* Mudhagoni_CalculatorTests */,
-				98952C7827BA098500D5778E /* Mudhagoni_CalculatorUITests */,
-				98952C5627BA098300D5778E /* Products */,
+				9881E77627BDFC1700909CB4 /* Mudhagoni_Calculator */,
+				9881E78D27BDFC1900909CB4 /* Mudhagoni_CalculatorTests */,
+				9881E79727BDFC1900909CB4 /* Mudhagoni_CalculatorUITests */,
+				9881E77527BDFC1700909CB4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		98952C5627BA098300D5778E /* Products */ = {
+		9881E77527BDFC1700909CB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98952C5527BA098300D5778E /* Mudhagoni_Calculator.app */,
-				98952C6B27BA098500D5778E /* Mudhagoni_CalculatorTests.xctest */,
-				98952C7527BA098500D5778E /* Mudhagoni_CalculatorUITests.xctest */,
+				9881E77427BDFC1700909CB4 /* Mudhagoni_Calculator.app */,
+				9881E78A27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.xctest */,
+				9881E79427BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		98952C5727BA098300D5778E /* Mudhagoni_Calculator */ = {
+		9881E77627BDFC1700909CB4 /* Mudhagoni_Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				98952C5827BA098300D5778E /* AppDelegate.swift */,
-				98952C5A27BA098300D5778E /* SceneDelegate.swift */,
-				98952C5C27BA098300D5778E /* ViewController.swift */,
-				98952C5E27BA098300D5778E /* Main.storyboard */,
-				98952C6127BA098500D5778E /* Assets.xcassets */,
-				98952C6327BA098500D5778E /* LaunchScreen.storyboard */,
-				98952C6627BA098500D5778E /* Info.plist */,
+				9881E77727BDFC1700909CB4 /* AppDelegate.swift */,
+				9881E77927BDFC1700909CB4 /* SceneDelegate.swift */,
+				9881E77B27BDFC1700909CB4 /* ViewController.swift */,
+				9881E77D27BDFC1700909CB4 /* Main.storyboard */,
+				9881E78027BDFC1900909CB4 /* Assets.xcassets */,
+				9881E78227BDFC1900909CB4 /* LaunchScreen.storyboard */,
+				9881E78527BDFC1900909CB4 /* Info.plist */,
 			);
 			path = Mudhagoni_Calculator;
 			sourceTree = "<group>";
 		};
-		98952C6E27BA098500D5778E /* Mudhagoni_CalculatorTests */ = {
+		9881E78D27BDFC1900909CB4 /* Mudhagoni_CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				98952C6F27BA098500D5778E /* Mudhagoni_CalculatorTests.swift */,
+				9881E78E27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.swift */,
 			);
 			path = Mudhagoni_CalculatorTests;
 			sourceTree = "<group>";
 		};
-		98952C7827BA098500D5778E /* Mudhagoni_CalculatorUITests */ = {
+		9881E79727BDFC1900909CB4 /* Mudhagoni_CalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				98952C7927BA098500D5778E /* Mudhagoni_CalculatorUITests.swift */,
-				98952C7B27BA098500D5778E /* Mudhagoni_CalculatorUITestsLaunchTests.swift */,
+				9881E79827BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.swift */,
+				9881E79A27BDFC1900909CB4 /* Mudhagoni_CalculatorUITestsLaunchTests.swift */,
 			);
 			path = Mudhagoni_CalculatorUITests;
 			sourceTree = "<group>";
@@ -130,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98952C5427BA098300D5778E /* Mudhagoni_Calculator */ = {
+		9881E77327BDFC1700909CB4 /* Mudhagoni_Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98952C7F27BA098500D5778E /* Build configuration list for PBXNativeTarget "Mudhagoni_Calculator" */;
+			buildConfigurationList = 9881E79E27BDFC1900909CB4 /* Build configuration list for PBXNativeTarget "Mudhagoni_Calculator" */;
 			buildPhases = (
-				98952C5127BA098300D5778E /* Sources */,
-				98952C5227BA098300D5778E /* Frameworks */,
-				98952C5327BA098300D5778E /* Resources */,
+				9881E77027BDFC1700909CB4 /* Sources */,
+				9881E77127BDFC1700909CB4 /* Frameworks */,
+				9881E77227BDFC1700909CB4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,69 +144,69 @@
 			);
 			name = Mudhagoni_Calculator;
 			productName = Mudhagoni_Calculator;
-			productReference = 98952C5527BA098300D5778E /* Mudhagoni_Calculator.app */;
+			productReference = 9881E77427BDFC1700909CB4 /* Mudhagoni_Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98952C6A27BA098500D5778E /* Mudhagoni_CalculatorTests */ = {
+		9881E78927BDFC1900909CB4 /* Mudhagoni_CalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98952C8227BA098500D5778E /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorTests" */;
+			buildConfigurationList = 9881E7A127BDFC1900909CB4 /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorTests" */;
 			buildPhases = (
-				98952C6727BA098500D5778E /* Sources */,
-				98952C6827BA098500D5778E /* Frameworks */,
-				98952C6927BA098500D5778E /* Resources */,
+				9881E78627BDFC1900909CB4 /* Sources */,
+				9881E78727BDFC1900909CB4 /* Frameworks */,
+				9881E78827BDFC1900909CB4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				98952C6D27BA098500D5778E /* PBXTargetDependency */,
+				9881E78C27BDFC1900909CB4 /* PBXTargetDependency */,
 			);
 			name = Mudhagoni_CalculatorTests;
 			productName = Mudhagoni_CalculatorTests;
-			productReference = 98952C6B27BA098500D5778E /* Mudhagoni_CalculatorTests.xctest */;
+			productReference = 9881E78A27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98952C7427BA098500D5778E /* Mudhagoni_CalculatorUITests */ = {
+		9881E79327BDFC1900909CB4 /* Mudhagoni_CalculatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98952C8527BA098500D5778E /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorUITests" */;
+			buildConfigurationList = 9881E7A427BDFC1900909CB4 /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorUITests" */;
 			buildPhases = (
-				98952C7127BA098500D5778E /* Sources */,
-				98952C7227BA098500D5778E /* Frameworks */,
-				98952C7327BA098500D5778E /* Resources */,
+				9881E79027BDFC1900909CB4 /* Sources */,
+				9881E79127BDFC1900909CB4 /* Frameworks */,
+				9881E79227BDFC1900909CB4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				98952C7727BA098500D5778E /* PBXTargetDependency */,
+				9881E79627BDFC1900909CB4 /* PBXTargetDependency */,
 			);
 			name = Mudhagoni_CalculatorUITests;
 			productName = Mudhagoni_CalculatorUITests;
-			productReference = 98952C7527BA098500D5778E /* Mudhagoni_CalculatorUITests.xctest */;
+			productReference = 9881E79427BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		98952C4D27BA098200D5778E /* Project object */ = {
+		9881E76C27BDFC1700909CB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					98952C5427BA098300D5778E = {
+					9881E77327BDFC1700909CB4 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					98952C6A27BA098500D5778E = {
+					9881E78927BDFC1900909CB4 = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 98952C5427BA098300D5778E;
+						TestTargetID = 9881E77327BDFC1700909CB4;
 					};
-					98952C7427BA098500D5778E = {
+					9881E79327BDFC1900909CB4 = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 98952C5427BA098300D5778E;
+						TestTargetID = 9881E77327BDFC1700909CB4;
 					};
 				};
 			};
-			buildConfigurationList = 98952C5027BA098300D5778E /* Build configuration list for PBXProject "Mudhagoni_Calculator" */;
+			buildConfigurationList = 9881E76F27BDFC1700909CB4 /* Build configuration list for PBXProject "Mudhagoni_Calculator" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 98952C4C27BA098200D5778E;
-			productRefGroup = 98952C5627BA098300D5778E /* Products */;
+			mainGroup = 9881E76B27BDFC1700909CB4;
+			productRefGroup = 9881E77527BDFC1700909CB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98952C5427BA098300D5778E /* Mudhagoni_Calculator */,
-				98952C6A27BA098500D5778E /* Mudhagoni_CalculatorTests */,
-				98952C7427BA098500D5778E /* Mudhagoni_CalculatorUITests */,
+				9881E77327BDFC1700909CB4 /* Mudhagoni_Calculator */,
+				9881E78927BDFC1900909CB4 /* Mudhagoni_CalculatorTests */,
+				9881E79327BDFC1900909CB4 /* Mudhagoni_CalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		98952C5327BA098300D5778E /* Resources */ = {
+		9881E77227BDFC1700909CB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98952C6527BA098500D5778E /* LaunchScreen.storyboard in Resources */,
-				98952C6227BA098500D5778E /* Assets.xcassets in Resources */,
-				98952C6027BA098300D5778E /* Main.storyboard in Resources */,
+				9881E78427BDFC1900909CB4 /* LaunchScreen.storyboard in Resources */,
+				9881E78127BDFC1900909CB4 /* Assets.xcassets in Resources */,
+				9881E77F27BDFC1700909CB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98952C6927BA098500D5778E /* Resources */ = {
+		9881E78827BDFC1900909CB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98952C7327BA098500D5778E /* Resources */ = {
+		9881E79227BDFC1900909CB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,61 +254,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		98952C5127BA098300D5778E /* Sources */ = {
+		9881E77027BDFC1700909CB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98952C5D27BA098300D5778E /* ViewController.swift in Sources */,
-				98952C5927BA098300D5778E /* AppDelegate.swift in Sources */,
-				98952C5B27BA098300D5778E /* SceneDelegate.swift in Sources */,
+				9881E77C27BDFC1700909CB4 /* ViewController.swift in Sources */,
+				9881E77827BDFC1700909CB4 /* AppDelegate.swift in Sources */,
+				9881E77A27BDFC1700909CB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98952C6727BA098500D5778E /* Sources */ = {
+		9881E78627BDFC1900909CB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98952C7027BA098500D5778E /* Mudhagoni_CalculatorTests.swift in Sources */,
+				9881E78F27BDFC1900909CB4 /* Mudhagoni_CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98952C7127BA098500D5778E /* Sources */ = {
+		9881E79027BDFC1900909CB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98952C7A27BA098500D5778E /* Mudhagoni_CalculatorUITests.swift in Sources */,
-				98952C7C27BA098500D5778E /* Mudhagoni_CalculatorUITestsLaunchTests.swift in Sources */,
+				9881E79927BDFC1900909CB4 /* Mudhagoni_CalculatorUITests.swift in Sources */,
+				9881E79B27BDFC1900909CB4 /* Mudhagoni_CalculatorUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		98952C6D27BA098500D5778E /* PBXTargetDependency */ = {
+		9881E78C27BDFC1900909CB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98952C5427BA098300D5778E /* Mudhagoni_Calculator */;
-			targetProxy = 98952C6C27BA098500D5778E /* PBXContainerItemProxy */;
+			target = 9881E77327BDFC1700909CB4 /* Mudhagoni_Calculator */;
+			targetProxy = 9881E78B27BDFC1900909CB4 /* PBXContainerItemProxy */;
 		};
-		98952C7727BA098500D5778E /* PBXTargetDependency */ = {
+		9881E79627BDFC1900909CB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98952C5427BA098300D5778E /* Mudhagoni_Calculator */;
-			targetProxy = 98952C7627BA098500D5778E /* PBXContainerItemProxy */;
+			target = 9881E77327BDFC1700909CB4 /* Mudhagoni_Calculator */;
+			targetProxy = 9881E79527BDFC1900909CB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98952C5E27BA098300D5778E /* Main.storyboard */ = {
+		9881E77D27BDFC1700909CB4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98952C5F27BA098300D5778E /* Base */,
+				9881E77E27BDFC1700909CB4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		98952C6327BA098500D5778E /* LaunchScreen.storyboard */ = {
+		9881E78227BDFC1900909CB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98952C6427BA098500D5778E /* Base */,
+				9881E78327BDFC1900909CB4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		98952C7D27BA098500D5778E /* Debug */ = {
+		9881E79C27BDFC1900909CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		98952C7E27BA098500D5778E /* Release */ = {
+		9881E79D27BDFC1900909CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,7 +432,7 @@
 			};
 			name = Release;
 		};
-		98952C8027BA098500D5778E /* Debug */ = {
+		9881E79F27BDFC1900909CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -460,7 +460,7 @@
 			};
 			name = Debug;
 		};
-		98952C8127BA098500D5778E /* Release */ = {
+		9881E7A027BDFC1900909CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -488,7 +488,7 @@
 			};
 			name = Release;
 		};
-		98952C8327BA098500D5778E /* Debug */ = {
+		9881E7A227BDFC1900909CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -507,7 +507,7 @@
 			};
 			name = Debug;
 		};
-		98952C8427BA098500D5778E /* Release */ = {
+		9881E7A327BDFC1900909CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -526,7 +526,7 @@
 			};
 			name = Release;
 		};
-		98952C8627BA098500D5778E /* Debug */ = {
+		9881E7A527BDFC1900909CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,7 +543,7 @@
 			};
 			name = Debug;
 		};
-		98952C8727BA098500D5778E /* Release */ = {
+		9881E7A627BDFC1900909CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -563,43 +563,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98952C5027BA098300D5778E /* Build configuration list for PBXProject "Mudhagoni_Calculator" */ = {
+		9881E76F27BDFC1700909CB4 /* Build configuration list for PBXProject "Mudhagoni_Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98952C7D27BA098500D5778E /* Debug */,
-				98952C7E27BA098500D5778E /* Release */,
+				9881E79C27BDFC1900909CB4 /* Debug */,
+				9881E79D27BDFC1900909CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98952C7F27BA098500D5778E /* Build configuration list for PBXNativeTarget "Mudhagoni_Calculator" */ = {
+		9881E79E27BDFC1900909CB4 /* Build configuration list for PBXNativeTarget "Mudhagoni_Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98952C8027BA098500D5778E /* Debug */,
-				98952C8127BA098500D5778E /* Release */,
+				9881E79F27BDFC1900909CB4 /* Debug */,
+				9881E7A027BDFC1900909CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98952C8227BA098500D5778E /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorTests" */ = {
+		9881E7A127BDFC1900909CB4 /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98952C8327BA098500D5778E /* Debug */,
-				98952C8427BA098500D5778E /* Release */,
+				9881E7A227BDFC1900909CB4 /* Debug */,
+				9881E7A327BDFC1900909CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98952C8527BA098500D5778E /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorUITests" */ = {
+		9881E7A427BDFC1900909CB4 /* Build configuration list for PBXNativeTarget "Mudhagoni_CalculatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98952C8627BA098500D5778E /* Debug */,
-				98952C8727BA098500D5778E /* Release */,
+				9881E7A527BDFC1900909CB4 /* Debug */,
+				9881E7A627BDFC1900909CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 98952C4D27BA098200D5778E /* Project object */;
+	rootObject = 9881E76C27BDFC1700909CB4 /* Project object */;
 }

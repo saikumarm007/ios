@@ -2,17 +2,17 @@
 //  ViewController.swift
 //  Mudhagoni_Calculator
 //
-//  Created by Mudhagoni,Sai Kumar on 2/13/22.
+//  Created by Mudhagoni,Sai Kumar on 2/16/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var pm: UIButton!
     @IBOutlet weak var DisplayLabel: UILabel!
     @IBOutlet weak var AC: UIButton!
     @IBOutlet weak var C: UIButton!
-    @IBOutlet weak var doubleArth: UIButton!
     @IBOutlet weak var Division: UIButton!
     @IBOutlet weak var S7: UIButton!
     @IBOutlet weak var E8: UIButton!
@@ -38,143 +38,142 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func clearAll(){
-            workings = ""
-            DisplayLabel.text = ""
-        }
+        workings = ""
+        DisplayLabel.text = ""
+    }
+
 
     @IBAction func Equal(_ sender: Any) {
         if(validInput())
-                        {
-                    let checkedWorkingsForPercent = workings
-        //                .replacingOccurrences(of: "%", with: "")
-                                let expression = NSExpression(format: checkedWorkingsForPercent)
-                                let result = expression.expressionValue(with: nil, context: nil) as! Double
-        //            if(expression == "/"){
-        //
-        //
-        //            }
-                                let resultString = formatResult(result: result)
-                                DisplayLabel.text = resultString
-                        }
-                        else
-                        {
-                            let alert = UIAlertController(
-                                title: "Invalid Input",
-                                message: "Calculator unable to do math based on input",
-                                preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                            self.present(alert, animated: true, completion: nil)
-                        }
-    }
-    
-    func validInput() ->Bool
-            {
-                var count = 0
-                var funcCharIndexes = [Int]()
-                
-                for char in workings
                 {
-                    if(specialCharacter(char: char))
-                    {
-                        funcCharIndexes.append(count)
-                    }
-                    count += 1
-                }
-                
-                var previous: Int = -1
-                
-                for index in funcCharIndexes
-                {
-                    if(index == 0)
-                    {
-                        return false
-                    }
-                    
-                    if(index == workings.count - 1)
-                    {
-                        return false
-                    }
-                    
-                    if (previous != -1)
-                    {
-                        if(index - previous == 1)
-                        {
-                            return false
-                        }
-                    }
-                    previous = index
-                }
-                
-                return true
-            }
-        func specialCharacter (char: Character) -> Bool
-            {
-                if(char == "*")
-                {
-                    return true
-                }
-                if(char == "/")
-                {
-                    return true
-                }
-                if(char == "+")
-                {
-                    return true
-                }
-                if(char == "%")
-                {
-                    return true
-                }
-                return false
-            }
-            
-            func formatResult(result: Double) -> String
-            {
-                
-                if(result.truncatingRemainder(dividingBy: 1) == 0)
-                {
-                    return String(format: "%.f", result)
+            let checkedWorkingsForPercent = workings
+//                .replacingOccurrences(of: "%", with: "")
+                        let expression = NSExpression(format: checkedWorkingsForPercent)
+                        let result = expression.expressionValue(with: nil, context: nil) as! Double
+//            if(expression == "/"){
+//
+//
+//            }
+                        let resultString = formatResult(result: result)
+                        DisplayLabel.text = resultString
                 }
                 else
                 {
-    //                return "Error"
-                    return String(format: "%.1f", result)
+                    let alert = UIAlertController(
+                        title: "Invalid Input",
+                        message: "Calculator unable to do math based on input",
+                        preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Okay", style: .default))
+                    self.present(alert, animated: true, completion: nil)
                 }
+    }
+    func validInput() ->Bool
+        {
+            var count = 0
+            var funcCharIndexes = [Int]()
+            
+            for char in workings
+            {
+                if(specialCharacter(char: char))
+                {
+                    funcCharIndexes.append(count)
+                }
+                count += 1
             }
-    
+            
+            var previous: Int = -1
+            
+            for index in funcCharIndexes
+            {
+                if(index == 0)
+                {
+                    return false
+                }
+                
+                if(index == workings.count - 1)
+                {
+                    return false
+                }
+                
+                if (previous != -1)
+                {
+                    if(index - previous == 1)
+                    {
+                        return false
+                    }
+                }
+                previous = index
+            }
+            
+            return true
+        }
+    func specialCharacter (char: Character) -> Bool
+        {
+            if(char == "*")
+            {
+                return true
+            }
+            if(char == "/")
+            {
+                return true
+            }
+            if(char == "+")
+            {
+                return true
+            }
+            if(char == "%")
+            {
+                return true
+            }
+            return false
+        }
+        
+        func formatResult(result: Double) -> String
+        {
+            
+            if(result.truncatingRemainder(dividingBy: 1) == 0)
+            {
+                return String(format: "%.f", result)
+            }
+            else
+            {
+//                return "Error"
+                return String(format: "%.1f", result)
+            }
+    }
     @IBAction func AC(_ sender: Any) {
         clearAll()
     }
     @IBAction func Clear(_ sender: Any) {
         if(!workings.isEmpty){
-                    workings.removeLast()
-                    DisplayLabel.text = workings
-                }
-    }
-    
-    func addToWorkings(value: String){
-            workings = workings + value
+            workings.removeLast()
             DisplayLabel.text = workings
         }
+    }
+    func addToWorkings(value: String){
+        workings = workings + value
+        DisplayLabel.text = workings
+    }
+   
     @IBAction func PM(_ sender: Any) {
         let pm = DisplayLabel.text!
-                var RunningTotal = (pm as NSString).doubleValue
-                if(RunningTotal > 0){
-                    RunningTotal = RunningTotal * -1;
-                    let std = String(format: "%.0f", RunningTotal)
-                    DisplayLabel.text = std;
-                    workings = std;
-                }
-                else{
-                    RunningTotal = RunningTotal * -1;
-                    let std = String(format: "%.0f", RunningTotal)
-                    DisplayLabel.text = std;
-                    workings = std;
-                }
-                }
-    
+        var RunningTotal = (pm as NSString).doubleValue
+        if(RunningTotal > 0){
+            RunningTotal = RunningTotal * -1;
+            let std = String(format: "%.0f", RunningTotal)
+            DisplayLabel.text = std;
+            workings = std;
+        }
+        else{
+            RunningTotal = RunningTotal * -1;
+            let std = String(format: "%.0f", RunningTotal)
+            DisplayLabel.text = std;
+            workings = std;
+        }
+    }
     @IBAction func Division(_ sender: Any) {
         addToWorkings(value: "/")
+        
     }
     @IBAction func Multiply(_ sender: Any) {
         addToWorkings(value: "*")
