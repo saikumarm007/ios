@@ -9,216 +9,317 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var pm: UIButton!
-    @IBOutlet weak var DisplayLabel: UILabel!
-    @IBOutlet weak var AC: UIButton!
-    @IBOutlet weak var C: UIButton!
-    @IBOutlet weak var Division: UIButton!
-    @IBOutlet weak var S7: UIButton!
-    @IBOutlet weak var E8: UIButton!
-    @IBOutlet weak var N9: UIButton!
-    @IBOutlet weak var F4: UIButton!
-    @IBOutlet weak var F5: UIButton!
-    @IBOutlet weak var S6: UIButton!
-    @IBOutlet weak var O1: UIButton!
-    @IBOutlet weak var T2: UIButton!
-    @IBOutlet weak var T3: UIButton!
-    @IBOutlet weak var Z0: UIButton!
-    @IBOutlet weak var DOT: UIButton!
-    @IBOutlet weak var Equal: UIButton!
-    @IBOutlet weak var Plus: UIButton!
-    @IBOutlet weak var Minus: UIButton!
-    @IBOutlet weak var Multiple: UIButton!
-    @IBOutlet weak var Remain: UIButton!
+    @IBOutlet weak var viewLoad: UILabel!
     
-    var workings:String = ""
+    var num1 = ""
+    var num2 = ""
+    var result = ""
+    var operation = ""
+    var currNum = ""
+    var opChange = false
+    var inChainmode = false
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        clearAll()
         // Do any additional setup after loading the view.
     }
-    func clearAll(){
-        workings = ""
-        DisplayLabel.text = ""
-    }
-
-
-    @IBAction func Equal(_ sender: Any) {
-        if(validInput())
-                {
-            let checkedWorkingsForPercent = workings
-//                .replacingOccurrences(of: "%", with: "")
-                        let expression = NSExpression(format: checkedWorkingsForPercent)
-                        let result = expression.expressionValue(with: nil, context: nil) as! Double
-//            if(expression == "/"){
-//
-//
-//            }
-                        let resultString = formatResult(result: result)
-                        DisplayLabel.text = resultString
-                }
-                else
-                {
-                    let alert = UIAlertController(
-                        title: "Invalid Input",
-                        message: "Calculator unable to do math based on input",
-                        preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                    self.present(alert, animated: true, completion: nil)
-                }
-    }
-    func validInput() ->Bool
-        {
-            var count = 0
-            var funcCharIndexes = [Int]()
-            
-            for char in workings
-            {
-                if(specialCharacter(char: char))
-                {
-                    funcCharIndexes.append(count)
-                }
-                count += 1
-            }
-            
-            var previous: Int = -1
-            
-            for index in funcCharIndexes
-            {
-                if(index == 0)
-                {
-                    return false
-                }
-                
-                if(index == workings.count - 1)
-                {
-                    return false
-                }
-                
-                if (previous != -1)
-                {
-                    if(index - previous == 1)
-                    {
-                        return false
-                    }
-                }
-                previous = index
-            }
-            
-            return true
-        }
-    func specialCharacter (char: Character) -> Bool
-        {
-            if(char == "*")
-            {
-                return true
-            }
-            if(char == "/")
-            {
-                return true
-            }
-            if(char == "+")
-            {
-                return true
-            }
-            if(char == "%")
-            {
-                return true
-            }
-            return false
-        }
+    
+    @IBAction func AC(_ sender: UIButton) {
         
-        func formatResult(result: Double) -> String
-        {
-            
-            if(result.truncatingRemainder(dividingBy: 1) == 0)
-            {
-                return String(format: "%.f", result)
-            }
-            else
-            {
-//                return "Error"
-                return String(format: "%.1f", result)
-            }
-    }
-    @IBAction func AC(_ sender: Any) {
         clearAll()
     }
-    @IBAction func Clear(_ sender: Any) {
-        if(!workings.isEmpty){
-            workings.removeLast()
-            DisplayLabel.text = workings
+    func clearAll(){
+        num1 = ""
+        num2 = ""
+        opChange = false
+        operation = ""
+        currNum = ""
+        viewLoad.text = ""
+        inChainmode = false
+    }
+    func setData(_ number: String){
+        if viewLoad.text == "0"{
+            viewLoad.text = ""
+        }
+        else{
+            if !opChange{
+                viewLoad.text! += number
+                num1 += number
+            }
+            else{
+                if !inChainmode{
+                    viewLoad.text! += number
+                    num2 += number
+                }
+                else{
+                    viewLoad.text = ""
+                    viewLoad.text! += number
+                    num2 += number
+                }
+            }
         }
     }
-    func addToWorkings(value: String){
-        workings = workings + value
-        DisplayLabel.text = workings
+    
+    func calTemp(_ operation:String)->String {
+        if num1 != "" && num2 != ""{
+            if operation == "+"{
+                num1 = String(Double(num1)! + Double(num2)!)
+                currNum = num2
+                num2 = ""
+                return String(num1)
+            }
+            if operation == "-"{
+                num1 = String(Double(num1)! - Double(num2)!)
+                currNum = num2
+                num2 = ""
+                
+                return String(num1)
+            }
+            if operation == "*"{
+                num1 = String(Double(num1)! * Double(num2)!)
+                currNum = num2
+                num2 = ""
+                return String(num1)
+            }
+            if operation == "/"{
+                num1 = String(Double(num1)! / Double(num2)!)
+                currNum = num2
+                num2 = ""
+                return String(num1)
+            }
+            if operation == "%" {
+                let s1 = Double(num1)!
+                let s2 = Double(num2)!
+                var r = s1.remainder(dividingBy: s2)
+                num1 = String(r)
+                currNum = num2
+                num2 = ""
+                return String(num1)
+            }
+        }
+        return ""
     }
-   
-    @IBAction func PM(_ sender: Any) {
-        let pm = DisplayLabel.text!
+    func resultFormatter(_ result:String)->String {
+        let value = Double(result)!
+        var resultStr = String(round(value * 100000) / 100000.0)
+        
+        if resultStr.contains(".0"){
+            resultStr.removeSubrange(resultStr.index(resultStr.endIndex, offsetBy: -2)..<resultStr.endIndex)
+        }
+        
+        return resultStr
+}
+    
+    @IBAction func C(_ sender: UIButton) {
+        num2 = ""
+        viewLoad.text = ""
+    }
+    @IBAction func plusOrMinus(_ sender: UIButton) {
+        let pm = viewLoad.text!
         var RunningTotal = (pm as NSString).doubleValue
         if(RunningTotal > 0){
             RunningTotal = RunningTotal * -1;
             let std = String(format: "%.0f", RunningTotal)
-            DisplayLabel.text = std;
-            workings = std;
+            viewLoad.text = std;
+//            workings = std;
         }
         else{
             RunningTotal = RunningTotal * -1;
             let std = String(format: "%.0f", RunningTotal)
-            DisplayLabel.text = std;
-            workings = std;
+            viewLoad.text = std;
+//            workings = std;
         }
     }
-    @IBAction func Division(_ sender: Any) {
-        addToWorkings(value: "/")
+    @IBAction func divide(_ sender: UIButton) {
+        let temp = calTemp(operation)
+        operation = "/"
+        viewLoad.text = (temp != "") ? resultFormatter(temp) : ""
+          if temp != "" {
+              //            inChainmode = true
+              if num2 != ""{
+                  inChainmode = true
+                  
+                  if opChange {
+                      result = String(Double(temp)! / Double(num2)!)
+                      print(result)
+                      if result == "inf"{
+                        viewLoad.text! = "Error"
+                      }else{
+                        viewLoad.text! = resultFormatter(result)
+                      }
+                  }
+              }
+          }
+          opChange = true
         
     }
-    @IBAction func Multiply(_ sender: Any) {
-        addToWorkings(value: "*")
+    
+    @IBAction func multiplication(_ sender: UIButton) {
+        let temp = calTemp(operation)
+        print("temp is \(temp)")
+        operation = "*"
+        currNum=""
+        viewLoad.text = (temp != "") ? resultFormatter(temp) : ""
+         
+        opChange = true
     }
-    @IBAction func Minus(_ sender: Any) {
-        addToWorkings(value: "-")
+    @IBAction func minus(_ sender: UIButton) {
+        if(num1 == ""){
+            num1 = "0"
+        }
+        let temp = calTemp(operation)
+        print("temp is \(temp)")
+        operation = "-"
+        currNum=""
+        viewLoad.text = (temp != "") ? resultFormatter(temp) : ""
+        opChange = true
+        
     }
-    @IBAction func Dot(_ sender: Any) {
-        addToWorkings(value: ".")
+    @IBAction func plus(_ sender: UIButton) {
+        let temp = calTemp(operation)
+        print("temp is \(temp)")
+        operation = "+"
+        currNum=""
+        viewLoad.text = (temp != "") ? resultFormatter(temp) : ""
+        opChange = true
     }
-    @IBAction func Plus(_ sender: Any) {
-        addToWorkings(value: "+")
+    
+    @IBAction func equals(_ sender: UIButton) {
+        var res = ""
+        switch operation {
+        case "+":
+            
+        if currNum != "" {
+                res = String(Double(num1)! + Double(currNum)!)
+                viewLoad.text = resultFormatter(res)
+                 num2 = currNum
+            }else{
+                res = String(Double(num1)! + Double(num2)!)
+                viewLoad.text = resultFormatter(res)
+            }
+            num1 = res
+            
+            break
+        case "*":
+            if currNum != "" {
+                res = String(Double(num1)! * Double(currNum)!)
+                viewLoad.text = resultFormatter(res)
+            }else{
+                res = String(Double(num1)! * Double(num2)!)
+                viewLoad.text = resultFormatter(res)
+            }
+            num1 = res
+            
+            break
+        case "-":
+            if currNum != "" {
+                res = String(Double(num1)! - Double(currNum)!)
+                viewLoad.text = resultFormatter(res)
+                
+            }else{
+                res = String(Double(num1)! - Double(num2)!)
+                viewLoad.text = resultFormatter(res)
+               
+            }
+            num1 = res
+            break
+        case "/":
+            if viewLoad.text == "Error"{
+                clearAll()
+            }else{
+                if currNum != "" {
+                    res = String(Double(num1)! / Double(currNum)!)
+                    if res == "inf"{
+                        viewLoad.text! = "Error"
+                        return
+                    }else{
+                        viewLoad.text = resultFormatter(res)
+                    }
+                }else{
+                    res = String(Double(num1)! / Double(num2)!)
+                    if res == "inf"{
+                        viewLoad.text! = "Error"
+                        return
+                    }else{
+                        viewLoad.text = resultFormatter(res)
+                    }
+                }
+                num1 = res
+            }
+            break
+        case "%":
+            if currNum != "" {
+                viewLoad.text = resultFormatter(res)
+                let s1 = Double(num1)!
+                let s2 = Double(currNum)!
+                var r = s1.remainder(dividingBy: s2)
+                res = String(r)
+                 num2 = currNum
+            }else{
+                let s1 = Double(num1)!
+                let s2 = Double(num2)!
+                var r = s1.remainder(dividingBy: s2)
+                res = String(r)
+                viewLoad.text = resultFormatter(res)
+            }
+            num1 = res
+            
+            break
+            
+        default:
+            print("IOS")
+        }
+    
     }
-    @IBAction func Remainder(_ sender: Any) {
-        addToWorkings(value: "%")
+    
+    @IBAction func remainder(_ sender: UIButton) {
+        let temp = calTemp(operation)
+        print("temp is \(temp)")
+        operation = "%"
+        currNum=""
+        viewLoad.text = (temp != "") ? resultFormatter(temp) : ""
+         
+        opChange = true
     }
-    @IBAction func Z0(_ sender: Any) {
-        addToWorkings(value: "0")
+    @IBAction func dot(_ sender: UIButton) {
+        setData(".")
     }
-    @IBAction func O1(_ sender: Any) {
-        addToWorkings(value: "1")
+    
+    @IBAction func seven(_ sender: UIButton) {
+        setData("7")
     }
-    @IBAction func T2(_ sender: Any) {
-        addToWorkings(value: "2")
+    @IBAction func eight(_ sender: UIButton) {
+        setData("8")
     }
-    @IBAction func T3(_ sender: Any) {
-        addToWorkings(value: "3")
+    
+    @IBAction func nine(_ sender: UIButton) {
+        setData("9")
     }
-    @IBAction func F4(_ sender: Any) {
-        addToWorkings(value: "4")
+    @IBAction func four(_ sender: UIButton) {
+        setData("4")
     }
-    @IBAction func F5(_ sender: Any) {
-        addToWorkings(value: "5")
+    
+    @IBAction func five(_ sender: UIButton) {
+        setData("5")
     }
-    @IBAction func S6(_ sender: Any) {
-        addToWorkings(value: "6")
+    @IBAction func six(_ sender: UIButton) {
+        setData("6")
     }
-    @IBAction func S7(_ sender: Any) {
-        addToWorkings(value: "7")
+    
+    @IBAction func one(_ sender: UIButton) {
+        setData("1")
     }
-    @IBAction func E8(_ sender: Any) {
-        addToWorkings(value: "8")
+    @IBAction func two(_ sender: UIButton) {
+        setData("2")
     }
-    @IBAction func N9(_ sender: Any) {
-        addToWorkings(value: "9")
+    @IBAction func three(_ sender: UIButton) {
+        setData("3")
     }
+    @IBAction func zero(_ sender: UIButton) {
+        setData("0")
+    }
+    
+    
 }
 
