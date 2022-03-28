@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F6D449F27EE840F000D0E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D449E27EE840F000D0E69 /* AppDelegate.swift */; };
+		3F6D44A127EE840F000D0E69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D44A027EE840F000D0E69 /* SceneDelegate.swift */; };
+		3F6D44A327EE840F000D0E69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D44A227EE840F000D0E69 /* ViewController.swift */; };
+		3F6D44A627EE840F000D0E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D44A427EE840F000D0E69 /* Main.storyboard */; };
+		3F6D44A827EE8410000D0E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D44A727EE8410000D0E69 /* Assets.xcassets */; };
+		3F6D44AB27EE8410000D0E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D44A927EE8410000D0E69 /* LaunchScreen.storyboard */; };
+		3F6D44B627EE8410000D0E69 /* Mudhagoni_WordGuessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D44B527EE8410000D0E69 /* Mudhagoni_WordGuessTests.swift */; };
+		3F6D44C027EE8410000D0E69 /* Mudhagoni_WordGuessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D44BF27EE8410000D0E69 /* Mudhagoni_WordGuessUITests.swift */; };
+		3F6D44C227EE8410000D0E69 /* Mudhagoni_WordGuessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D44C127EE8410000D0E69 /* Mudhagoni_WordGuessUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F6D44B227EE8410000D0E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F6D449327EE840F000D0E69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F6D449A27EE840F000D0E69;
+			remoteInfo = Mudhagoni_WordGuess;
+		};
+		3F6D44BC27EE8410000D0E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F6D449327EE840F000D0E69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F6D449A27EE840F000D0E69;
+			remoteInfo = Mudhagoni_WordGuess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F6D449B27EE840F000D0E69 /* Mudhagoni_WordGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mudhagoni_WordGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6D449E27EE840F000D0E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F6D44A027EE840F000D0E69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F6D44A227EE840F000D0E69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F6D44A527EE840F000D0E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F6D44A727EE8410000D0E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F6D44AA27EE8410000D0E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F6D44AC27EE8410000D0E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6D44B127EE8410000D0E69 /* Mudhagoni_WordGuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mudhagoni_WordGuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6D44B527EE8410000D0E69 /* Mudhagoni_WordGuessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_WordGuessTests.swift; sourceTree = "<group>"; };
+		3F6D44BB27EE8410000D0E69 /* Mudhagoni_WordGuessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mudhagoni_WordGuessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6D44BF27EE8410000D0E69 /* Mudhagoni_WordGuessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_WordGuessUITests.swift; sourceTree = "<group>"; };
+		3F6D44C127EE8410000D0E69 /* Mudhagoni_WordGuessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudhagoni_WordGuessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F6D449827EE840F000D0E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D44AE27EE8410000D0E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D44B827EE8410000D0E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F6D449227EE840F000D0E69 = {
+			isa = PBXGroup;
+			children = (
+				3F6D449D27EE840F000D0E69 /* Mudhagoni_WordGuess */,
+				3F6D44B427EE8410000D0E69 /* Mudhagoni_WordGuessTests */,
+				3F6D44BE27EE8410000D0E69 /* Mudhagoni_WordGuessUITests */,
+				3F6D449C27EE840F000D0E69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F6D449C27EE840F000D0E69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F6D449B27EE840F000D0E69 /* Mudhagoni_WordGuess.app */,
+				3F6D44B127EE8410000D0E69 /* Mudhagoni_WordGuessTests.xctest */,
+				3F6D44BB27EE8410000D0E69 /* Mudhagoni_WordGuessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F6D449D27EE840F000D0E69 /* Mudhagoni_WordGuess */ = {
+			isa = PBXGroup;
+			children = (
+				3F6D449E27EE840F000D0E69 /* AppDelegate.swift */,
+				3F6D44A027EE840F000D0E69 /* SceneDelegate.swift */,
+				3F6D44A227EE840F000D0E69 /* ViewController.swift */,
+				3F6D44A427EE840F000D0E69 /* Main.storyboard */,
+				3F6D44A727EE8410000D0E69 /* Assets.xcassets */,
+				3F6D44A927EE8410000D0E69 /* LaunchScreen.storyboard */,
+				3F6D44AC27EE8410000D0E69 /* Info.plist */,
+			);
+			path = Mudhagoni_WordGuess;
+			sourceTree = "<group>";
+		};
+		3F6D44B427EE8410000D0E69 /* Mudhagoni_WordGuessTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F6D44B527EE8410000D0E69 /* Mudhagoni_WordGuessTests.swift */,
+			);
+			path = Mudhagoni_WordGuessTests;
+			sourceTree = "<group>";
+		};
+		3F6D44BE27EE8410000D0E69 /* Mudhagoni_WordGuessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F6D44BF27EE8410000D0E69 /* Mudhagoni_WordGuessUITests.swift */,
+				3F6D44C127EE8410000D0E69 /* Mudhagoni_WordGuessUITestsLaunchTests.swift */,
+			);
+			path = Mudhagoni_WordGuessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F6D449A27EE840F000D0E69 /* Mudhagoni_WordGuess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6D44C527EE8410000D0E69 /* Build configuration list for PBXNativeTarget "Mudhagoni_WordGuess" */;
+			buildPhases = (
+				3F6D449727EE840F000D0E69 /* Sources */,
+				3F6D449827EE840F000D0E69 /* Frameworks */,
+				3F6D449927EE840F000D0E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mudhagoni_WordGuess;
+			productName = Mudhagoni_WordGuess;
+			productReference = 3F6D449B27EE840F000D0E69 /* Mudhagoni_WordGuess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F6D44B027EE8410000D0E69 /* Mudhagoni_WordGuessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6D44C827EE8410000D0E69 /* Build configuration list for PBXNativeTarget "Mudhagoni_WordGuessTests" */;
+			buildPhases = (
+				3F6D44AD27EE8410000D0E69 /* Sources */,
+				3F6D44AE27EE8410000D0E69 /* Frameworks */,
+				3F6D44AF27EE8410000D0E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F6D44B327EE8410000D0E69 /* PBXTargetDependency */,
+			);
+			name = Mudhagoni_WordGuessTests;
+			productName = Mudhagoni_WordGuessTests;
+			productReference = 3F6D44B127EE8410000D0E69 /* Mudhagoni_WordGuessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F6D44BA27EE8410000D0E69 /* Mudhagoni_WordGuessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6D44CB27EE8410000D0E69 /* Build configuration list for PBXNativeTarget "Mudhagoni_WordGuessUITests" */;
+			buildPhases = (
+				3F6D44B727EE8410000D0E69 /* Sources */,
+				3F6D44B827EE8410000D0E69 /* Frameworks */,
+				3F6D44B927EE8410000D0E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F6D44BD27EE8410000D0E69 /* PBXTargetDependency */,
+			);
+			name = Mudhagoni_WordGuessUITests;
+			productName = Mudhagoni_WordGuessUITests;
+			productReference = 3F6D44BB27EE8410000D0E69 /* Mudhagoni_WordGuessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F6D449327EE840F000D0E69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3F6D449A27EE840F000D0E69 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3F6D44B027EE8410000D0E69 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 3F6D449A27EE840F000D0E69;
+					};
+					3F6D44BA27EE8410000D0E69 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 3F6D449A27EE840F000D0E69;
+					};
+				};
+			};
+			buildConfigurationList = 3F6D449627EE840F000D0E69 /* Build configuration list for PBXProject "Mudhagoni_WordGuess" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F6D449227EE840F000D0E69;
+			productRefGroup = 3F6D449C27EE840F000D0E69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F6D449A27EE840F000D0E69 /* Mudhagoni_WordGuess */,
+				3F6D44B027EE8410000D0E69 /* Mudhagoni_WordGuessTests */,
+				3F6D44BA27EE8410000D0E69 /* Mudhagoni_WordGuessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F6D449927EE840F000D0E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6D44AB27EE8410000D0E69 /* LaunchScreen.storyboard in Resources */,
+				3F6D44A827EE8410000D0E69 /* Assets.xcassets in Resources */,
+				3F6D44A627EE840F000D0E69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D44AF27EE8410000D0E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D44B927EE8410000D0E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F6D449727EE840F000D0E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6D44A327EE840F000D0E69 /* ViewController.swift in Sources */,
+				3F6D449F27EE840F000D0E69 /* AppDelegate.swift in Sources */,
+				3F6D44A127EE840F000D0E69 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D44AD27EE8410000D0E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6D44B627EE8410000D0E69 /* Mudhagoni_WordGuessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D44B727EE8410000D0E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6D44C027EE8410000D0E69 /* Mudhagoni_WordGuessUITests.swift in Sources */,
+				3F6D44C227EE8410000D0E69 /* Mudhagoni_WordGuessUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F6D44B327EE8410000D0E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F6D449A27EE840F000D0E69 /* Mudhagoni_WordGuess */;
+			targetProxy = 3F6D44B227EE8410000D0E69 /* PBXContainerItemProxy */;
+		};
+		3F6D44BD27EE8410000D0E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F6D449A27EE840F000D0E69 /* Mudhagoni_WordGuess */;
+			targetProxy = 3F6D44BC27EE8410000D0E69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F6D44A427EE840F000D0E69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F6D44A527EE840F000D0E69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F6D44A927EE8410000D0E69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F6D44AA27EE8410000D0E69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F6D44C327EE8410000D0E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F6D44C427EE8410000D0E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F6D44C627EE8410000D0E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mudhagoni_WordGuess/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mudhagoni_WordGuess;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.Mudhagoni-WordGuess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F6D44C727EE8410000D0E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mudhagoni_WordGuess/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mudhagoni_WordGuess;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.Mudhagoni-WordGuess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F6D44C927EE8410000D0E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.Mudhagoni-WordGuessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mudhagoni_WordGuess.app/Mudhagoni_WordGuess";
+			};
+			name = Debug;
+		};
+		3F6D44CA27EE8410000D0E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.Mudhagoni-WordGuessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mudhagoni_WordGuess.app/Mudhagoni_WordGuess";
+			};
+			name = Release;
+		};
+		3F6D44CC27EE8410000D0E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.Mudhagoni-WordGuessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mudhagoni_WordGuess;
+			};
+			name = Debug;
+		};
+		3F6D44CD27EE8410000D0E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmsu.Mudhagoni-WordGuessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mudhagoni_WordGuess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F6D449627EE840F000D0E69 /* Build configuration list for PBXProject "Mudhagoni_WordGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6D44C327EE8410000D0E69 /* Debug */,
+				3F6D44C427EE8410000D0E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6D44C527EE8410000D0E69 /* Build configuration list for PBXNativeTarget "Mudhagoni_WordGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6D44C627EE8410000D0E69 /* Debug */,
+				3F6D44C727EE8410000D0E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6D44C827EE8410000D0E69 /* Build configuration list for PBXNativeTarget "Mudhagoni_WordGuessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6D44C927EE8410000D0E69 /* Debug */,
+				3F6D44CA27EE8410000D0E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6D44CB27EE8410000D0E69 /* Build configuration list for PBXNativeTarget "Mudhagoni_WordGuessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6D44CC27EE8410000D0E69 /* Debug */,
+				3F6D44CD27EE8410000D0E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F6D449327EE840F000D0E69 /* Project object */;
+}
